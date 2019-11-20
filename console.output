@@ -1,0 +1,27 @@
+aws_security_group.instance: Creating...
+aws_security_group.instance: Still creating... [10s elapsed]
+aws_security_group.instance: Creation complete after 11s [id=sg-03266665a62c9a3d3]
+aws_instance.example: Creating...
+aws_instance.example: Still creating... [10s elapsed]
+aws_instance.example: Still creating... [20s elapsed]
+aws_instance.example: Still creating... [30s elapsed]
+aws_instance.example: Creation complete after 39s [id=i-0278b4263c31c9557]
+
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+public_dns = ec2-3-134-76-210.us-east-2.compute.amazonaws.com
+public_ip = 3.134.76.210
+yhalachev@Yordans-MacBook-Pro outputs (master) $ terraform refresh
+aws_security_group.instance: Refreshing state... [id=sg-03266665a62c9a3d3]
+aws_instance.example: Refreshing state... [id=i-0278b4263c31c9557]
+
+Outputs:
+
+public_dns = ec2-3-134-76-210.us-east-2.compute.amazonaws.com
+public_ip = 3.134.76.210
+yhalachev@Yordans-MacBook-Pro outputs (master) $ terraform output
+public_dns = ec2-3-134-76-210.us-east-2.compute.amazonaws.com
+public_ip = 3.134.76.210
+
