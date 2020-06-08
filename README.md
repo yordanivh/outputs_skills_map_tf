@@ -6,10 +6,9 @@ This Repo contains TF example for outputs
 Terraform outputs is a function you can use to get information about a resource you have created
 i.e. 
 
-```
+```hcl
 output "public_ip" {
-	value = "${aws_instance.example.public_ip}"
-
+    value = "${aws_instance.example.public_ip}"
 }
 ```
 
